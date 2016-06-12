@@ -8,6 +8,7 @@
 
 #import "YMViewController.h"
 
+#import "TargetLogin.h"
 @interface YMViewController ()
 
 @end
@@ -18,6 +19,23 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
+    NSString *bundlePath = [[[NSBundle bundleForClass:[TargetLogin class]]
+                             pathsForResourcesOfType:@"bundle"
+                             inDirectory:@""]
+                            lastObject];
+    
+    NSBundle *bundle = bundlePath?[NSBundle bundleWithPath:bundlePath]:[NSBundle mainBundle];
+    NSLog(@"bundle %@",bundle);
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    UIViewController * vc =
+    
+    [[[TargetLogin alloc] init]  ActionFetchViewControllerLogin:nil];
+    [self presentViewController:vc animated:YES completion:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning

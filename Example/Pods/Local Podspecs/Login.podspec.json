@@ -1,9 +1,9 @@
 {
   "name": "Login",
   "version": "0.1.0",
-  "summary": "A short description of Login.",
+  "summary": "Login.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/Login",
+  "homepage": "https://github.com/ModuleProject/Login",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,16 @@
     "YM": "yangming@1yd.me"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/Login.git",
+    "git": "https://github.com/ModuleProject/Login.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "Login/Classes/**/*"
+  "source_files": "Login/**/*.{h,m}",
+  "resource_bundles": {
+    "Login": [
+      "Login/**/*.xib"
+    ]
+  }
 }

@@ -12,7 +12,22 @@
 @implementation TargetLogin
 
 - (UIViewController *)ActionFetchViewControllerLogin:(NSDictionary *)dic{
-    return  [[LoginVC alloc] initWithNibName:@"LoginVC" bundle:nil];
+
+    
+    
+    NSString *bundlePath = [[[NSBundle bundleForClass:[self class]]
+                            pathsForResourcesOfType:@"bundle"
+                            inDirectory:@""]
+                            lastObject];
+    
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+
+    
+    return [[LoginVC alloc] initWithNibName:@"LoginVC" bundle:bundle];
+    
+    
+    
+    
 }
 
 @end
