@@ -13,6 +13,6 @@
 /**
  *  获取 登录 VC
  */
-- (UIViewController *)ActionFetchViewControllerLogin;
+- (UIViewController *)ActionFetchViewControllerLogin:(NSDictionary *)dic;
 
 @end
