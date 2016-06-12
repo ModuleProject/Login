@@ -35,6 +35,6 @@ s.source_files = 'Login/**/*.{h,m}'
 s.resource_bundles = {
 'Login' => ['Login/**/*.xib']
 }
-s.dependency 'BaseClass'
+s.dependency 'BaseClass','~>0.1.0'
 
 end
