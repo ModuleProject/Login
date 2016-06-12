@@ -1,16 +1,27 @@
 PODS:
-  - Login (0.1.0)
+  - BaseClass (0.5.0)
+  - Login (0.1.0):
+    - BaseClass
 
 DEPENDENCIES:
+  - BaseClass (from `https://github.com/ModuleProject/BaseClass.git`)
   - Login (from `../`)
 
 EXTERNAL SOURCES:
+  BaseClass:
+    :git: https://github.com/ModuleProject/BaseClass.git
   Login:
     :path: ../
 
-SPEC CHECKSUMS:
-  Login: aed3ccfa03b7110fead4ff329acbcaecb3a217fc
+CHECKOUT OPTIONS:
+  BaseClass:
+    :commit: 3245a4dbc5d9f350ec0f4d7868e9828e487d3950
+    :git: https://github.com/ModuleProject/BaseClass.git
 
-PODFILE CHECKSUM: 8ddc1ee73d37de0c34fb8719a9ba317ccceabfc5
+SPEC CHECKSUMS:
+  BaseClass: d71159c9d2dcb206a4cf15ecd7ca788acde965c9
+  Login: 0aa7189594b46f07f6659cfe900c0f2d5daf38ac
+
+PODFILE CHECKSUM: 451f04b65dd59d0fa4894ca832a63f71735ed93f
 
 COCOAPODS: 1.0.1

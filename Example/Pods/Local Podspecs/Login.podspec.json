@@ -23,5 +23,10 @@
     "Login": [
       "Login/**/*.xib"
     ]
+  },
+  "dependencies": {
+    "BaseClass": [
+
+    ]
   }
 }
