@@ -10,11 +10,14 @@
 		02C83CDB0A43D96AFE313B6DEED3BCE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		02D9429C01B92C2CF8A189C5691B9474 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		14CB411885771DC23E2A131383EFE328 /* Login-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 987D3CB8088971E19C3A5791001B6A95 /* Login-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D5301DF48921464D93C759A6F2CFD2D /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 648EEA2E579CF12570445983E1A26BFB /* ReplaceMe.m */; };
 		59E837487EF488539D2BA27E0D8E2998 /* Login-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC7F7DA2E3E0F85627C1701DC0C3FBB /* Login-dummy.m */; };
 		741D1AEA9F12E6D2FAC107C2B8890C45 /* Pods-Login_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F61AAA6119B74250FA1CEE69C152002 /* Pods-Login_Tests-dummy.m */; };
 		854D1D3FEDD55B44DEBE21194D039CD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		8E48421BD6940B032B91B045A8C4EC20 /* Pods-Login_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96EB1B48B1377B5279E49AA9110BD007 /* Pods-Login_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		999D39A21D0D209F00C950C6 /* LoginVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 999D399F1D0D209F00C950C6 /* LoginVC.h */; };
+		999D39A31D0D209F00C950C6 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 999D39A01D0D209F00C950C6 /* LoginVC.m */; };
+		999D39A71D0D222200C950C6 /* TargetLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 999D39A51D0D222200C950C6 /* TargetLogin.h */; };
+		999D39A81D0D222200C950C6 /* TargetLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 999D39A61D0D222200C950C6 /* TargetLogin.m */; };
 		FB7492BEE052BF9194B42BA11EB21E9F /* Pods-Login_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7556E28C3611EC7A3E2B54C107819D /* Pods-Login_Example-dummy.m */; };
 		FBF1F56A9078E532E0E9E5E90AE19B49 /* Pods-Login_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1754E53E7B80DCA3EC35A6CA364ED2D3 /* Pods-Login_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -40,7 +43,6 @@
 		40AB457E2A0622CF34DEAB1D6323F237 /* Login-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Login-prefix.pch"; sourceTree = "<group>"; };
 		48DFF70C9D893B9613BCE70408B16F18 /* Pods-Login_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Login_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4B7956771A425AF5D908902677F56FB1 /* Pods-Login_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Login_Example.release.xcconfig"; sourceTree = "<group>"; };
-		648EEA2E579CF12570445983E1A26BFB /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		8183C8EE5461B62D28A0564040DCC2C2 /* Pods-Login_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Login_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		843D9DD5AE88675098EBB060294CF324 /* Pods-Login_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Login_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8CC7F7DA2E3E0F85627C1701DC0C3FBB /* Login-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Login-dummy.m"; sourceTree = "<group>"; };
@@ -49,6 +51,11 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96EB1B48B1377B5279E49AA9110BD007 /* Pods-Login_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Login_Tests-umbrella.h"; sourceTree = "<group>"; };
 		987D3CB8088971E19C3A5791001B6A95 /* Login-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Login-umbrella.h"; sourceTree = "<group>"; };
+		999D399F1D0D209F00C950C6 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		999D39A01D0D209F00C950C6 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		999D39A11D0D209F00C950C6 /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		999D39A51D0D222200C950C6 /* TargetLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetLogin.h; sourceTree = "<group>"; };
+		999D39A61D0D222200C950C6 /* TargetLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetLogin.m; sourceTree = "<group>"; };
 		9D97726633875F8C6B4FAEC38014C9E0 /* Pods_Login_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Login_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA2534899C10E5E55CA36E179CB36B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1D1A3CC88BEFDAF699141F9ADB27AB0 /* Login.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Login.modulemap; sourceTree = "<group>"; };
@@ -118,14 +125,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5D7CFB4D27341F4F6F01761FBAF59368 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				648EEA2E579CF12570445983E1A26BFB /* ReplaceMe.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		767786FFB4385123500145930F2D9961 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,9 +153,37 @@
 		89505B9F20E99E8D417B3FADB63C01E1 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				5D7CFB4D27341F4F6F01761FBAF59368 /* Classes */,
+				999D39A41D0D21E700C950C6 /* Actions */,
+				999D399D1D0D208000C950C6 /* Login */,
+				999D399E1D0D208000C950C6 /* Reg */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		999D399D1D0D208000C950C6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				999D399F1D0D209F00C950C6 /* LoginVC.h */,
+				999D39A01D0D209F00C950C6 /* LoginVC.m */,
+				999D39A11D0D209F00C950C6 /* LoginVC.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		999D399E1D0D208000C950C6 /* Reg */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reg;
+			sourceTree = "<group>";
+		};
+		999D39A41D0D21E700C950C6 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				999D39A51D0D222200C950C6 /* TargetLogin.h */,
+				999D39A61D0D222200C950C6 /* TargetLogin.m */,
+			);
+			path = Actions;
 			sourceTree = "<group>";
 		};
 		A87AE8729F429700922201202E8A93AA /* Login */ = {
@@ -230,6 +257,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				14CB411885771DC23E2A131383EFE328 /* Login-umbrella.h in Headers */,
+				999D39A71D0D222200C950C6 /* TargetLogin.h in Headers */,
+				999D39A21D0D209F00C950C6 /* LoginVC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,8 +374,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				999D39A31D0D209F00C950C6 /* LoginVC.m in Sources */,
+				999D39A81D0D222200C950C6 /* TargetLogin.m in Sources */,
 				59E837487EF488539D2BA27E0D8E2998 /* Login-dummy.m in Sources */,
-				1D5301DF48921464D93C759A6F2CFD2D /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
