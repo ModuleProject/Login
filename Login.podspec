@@ -38,5 +38,5 @@ s.source_files = 'Login/**/*.{h,m}'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-s.dependency 'BaseClass', :git => 'https://github.com/ModuleProject/BaseClass.git'
+#s.dependency 'BaseClass', :git => 'https://github.com/ModuleProject/BaseClass.git'
 end
