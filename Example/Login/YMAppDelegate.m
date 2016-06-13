@@ -7,7 +7,6 @@
 //
 
 #import "YMAppDelegate.h"
-
 @implementation YMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

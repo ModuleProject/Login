@@ -1,7 +1,10 @@
-
+source 'https://github.com/ModuleProject/BaseClass.git'
+source 'https://github.com/CocoaPods/Specs.git'  # 官方库
 use_frameworks!
 
 target 'Login_Example' do
+    pod 'BaseClass',:git => 'https://github.com/ModuleProject/BaseClass.git'
+
   pod 'Login', :path => '../'
 
   target 'Login_Tests' do

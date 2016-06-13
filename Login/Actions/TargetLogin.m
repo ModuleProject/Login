@@ -8,26 +8,13 @@
 
 #import "TargetLogin.h"
 #import "LoginVC.h"
+#import <BaseClass/NSObject+YMBundle.h>
 
 @implementation TargetLogin
 
-- (UIViewController *)ActionFetchViewControllerLogin:(NSDictionary *)dic{
++ (UIViewController *)ActionFetchViewControllerLogin:(NSDictionary *)dic{
 
-    
-    
-    NSString *bundlePath = [[[NSBundle bundleForClass:[self class]]
-                            pathsForResourcesOfType:@"bundle"
-                            inDirectory:@""]
-                            lastObject];
-    
-    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
-
-    
-    return [[LoginVC alloc] initWithNibName:@"LoginVC" bundle:bundle];
-    
-    
-    
-    
+    return [[LoginVC alloc] initWithNibName:@"LoginVC" bundle:[self currentBundle]];
 }
 
 @end

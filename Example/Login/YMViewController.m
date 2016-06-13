@@ -33,7 +33,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     UIViewController * vc =
     
-    [[[TargetLogin alloc] init]  ActionFetchViewControllerLogin:nil];
+    [TargetLogin  ActionFetchViewControllerLogin:nil];
     [self presentViewController:vc animated:YES completion:nil];
     
 }
