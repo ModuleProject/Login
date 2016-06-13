@@ -12,7 +12,7 @@
 
 @implementation TargetLogin
 
-+ (UIViewController *)ActionFetchViewControllerLogin:(NSDictionary *)dic{
+- (UIViewController *)ActionFetchViewControllerLogin:(NSDictionary *)dic{
 
     return [[LoginVC alloc] initWithNibName:@"LoginVC" bundle:[self currentBundle]];
 }
